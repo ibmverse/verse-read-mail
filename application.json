@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Read this mail",
+    "title": "Read this mail",
+    "description": "Read this message",
+    "extensions": [
+     {
+        "type": "com.ibm.verse.ext.widget",
+        "payload": {
+          "url": "https://<application-name>.mybluemix.net", 
+          "features": ["core"],
+          "actions": [{
+            "id": "com.ibm.verse.ext.mail.read.message.action",
+            "path": "mail.read",
+            "text": "Read this mail",
+            "location": "embedded",
+            "renderParams": {
+              "width": "1000", 
+              "height": "436"
+            }
+          }]
+        }
+     }],
+
+    "services": [
+        "Verse"
+    ]
+  }
+]

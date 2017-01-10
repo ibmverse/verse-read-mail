@@ -1,0 +1,116 @@
+.audio {
+  width: 100%;
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.output-container {
+  padding: 20px;
+  margin-bottom: 1rem;
+  background: url(/images/bg-waston-logo.png) right bottom no-repeat #1d3649;
+  height: 430px;
+  background-size: 322px 320px;
+}
+
+.errorMessage {
+  color: yellow;
+}
+
+.errorMessage.hidden {
+  display: none;
+}
+
+.errorMessage svg {
+  fill: yellow;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.step-wrapper {
+  background-color: #564567;
+  display: inline-block;
+  border-radius: 14px;
+  position: relative;
+  height: 28px;
+  line-height: 28px;
+  padding-right: 15px;
+  transition: background-color .5s ease, padding-right .5s ease;
+}
+
+.step-wrapper.active .loader-container {
+  opacity: 1;
+}
+
+.step-wrapper .loader-container {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.step-wrapper .step-message {
+  height: 100%;
+  vertical-align: middle;
+  padding-left: 35px;
+  color: #efefef;
+}
+
+.step-wrapper .step-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.step-wrapper.finished {
+  background-color: rgb(75, 132, 0);
+  padding-right: 40px;
+}
+
+.audio-wrapper {
+  margin-right: 320px;
+}
+
+.err-content {
+  margin: 5px 0 auto 10px;
+}
+
+.success-wrapper {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 18px;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.finished .success-wrapper {
+  opacity: 1;
+}
+
+.title-container {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 5rem;
+  margin-right: 320px;
+}
+
+.title-container span {
+  font-style: italic;
+}
