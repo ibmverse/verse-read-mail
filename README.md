@@ -1,10 +1,10 @@
-## verse-read-mail
+## Verse Read Mail
 This sample demonstrations how to integrate the [Watson Text To Speech](https://www.ibm.com/watson/developercloud/text-to-speech.html) with IBM Verse.
 
-### demo
+### Demo
 ![](/demo.gif)
 
-### steps to complete the integration
+### Steps to complete the integration
 1. Set up the Tone Analyzer Node.js starter application
   1. Follow instructions posted [here](https://github.com/watson-developer-cloud/text-to-speech-nodejs). Should push the application to Bluemix (E.g. `https://<application-name>.mybluemix.net`).
 1. Extend the starter application to perform text to speech for mails being read in Verse
