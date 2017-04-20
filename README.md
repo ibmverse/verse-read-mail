@@ -16,9 +16,9 @@ This sample demonstrations how to integrate the [Watson Text To Speech](https://
 1. Use Verse Developer Chrome extension to register the sample
   1. Set up the Verse Developer Chrome extension using these [instructions](https://ibmcnxdev.github.io/verse-developer-chrome-ext/tutorials/tutorial_verse_developer.html)
   1. Replace the `applications.json` with the one from this project
-  1. Update the url in line 10 with the bluemix application url (e.g. `https://<application-name>.mybluemix.net`)
-  1. Reload the extension and reload Verse (with gatekeep &widget-chrome=1)
+  1. Edit `applications.json` and update the bluemix application url (e.g. `https://<application-name>.mybluemix.net`)
+  1. Reload the extension and reload Verse
 1. Run the sample
   1. Select a mail and read it in Verse
-  1. Open he overflow menu (select '...') and select the 'Read this mail' action
-  1. An iframe will be added in mail body (or a window will open) and the mail reading view will be displayed
+  1. Open he overflow menu (select '...') and select the 'Read Mail' action
+  1. A window will open and the mail reading view will be displayed
