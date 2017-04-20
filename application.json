@@ -1,27 +1,34 @@
 [
   {
-    "name": "Read this mail",
-    "title": "Read this mail",
-    "description": "Read this message",
+    "app_id": "com.ibm.verse.app.read.message",
+    "id": "com.ibm.verse.app.read.message",
+    "name": "Read Mail",
+    "title": "Read Mail",
+    "description": "Read the currently open mail message",
     "extensions": [
-     {
+      {
         "type": "com.ibm.verse.ext.widget",
+        "id": "com.ibm.verse.sample.ext.read.message",
+        "name": "Read Mail",
         "payload": {
           "url": "https://<application-name>.mybluemix.net", 
           "features": ["core"],
-          "actions": [{
-            "id": "com.ibm.verse.ext.mail.read.message.action",
-            "path": "mail.read",
-            "text": "Read this mail",
-            "location": "embedded",
-            "renderParams": {
-              "width": "1000", 
-              "height": "436"
+          "actions": [
+            {
+              "id": "com.ibm.verse.ext.mail.read.message.action",
+              "path": "mail.read",
+              "text": "Read Mail",
+              "title": "Read Mail",
+              "location": "window",
+              "renderParams": {
+                "width": "900",
+                "height": "500"
+              }
             }
-          }]
+          ]
         }
-     }],
-
+      }
+    ],
     "services": [
         "Verse"
     ]
